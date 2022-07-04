@@ -1,0 +1,36 @@
+body {
+	font: $fontWeightBase #{$fontSizeBase}/$lineHeightBase $fontFamilyBase;
+
+	@include media-breakpoint-down(sm) {
+		font-size: $fontSizeBase_sm;
+		line-height: $lineHeightBase_sm;
+	}
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0 0 0.5em;
+		font-weight: $headingsFontWeight;
+
+		a {
+			&,
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+}
+
+.title {
+	margin-bottom: 15px;
+	font-size: 27px;
+	line-height: (36/27);
+
+	@include media-breakpoint-down(sm) {
+		font-size: 20px;
+	}
+
+	&__accent {
+		color: $primary;
+	}
+}

@@ -1,0 +1,78 @@
+// paths
+$images: '../images/';
+$fonts: '../fonts/';
+
+//typography
+$thin: 100 !default;
+$light: 300 !default;
+$regular: 400 !default;
+$medium: 500 !default;
+$semi: 600 !default;
+$bold: 700 !default;
+$ultraBold: 800 !default;
+
+$sans: sans-serif !default;
+$serif: serif !default;
+$montserrat: 'Montserrat', $sans;
+
+$fontDefault: $montserrat;
+
+// bootstrap grid
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+);
+
+// colors
+$white: #fff;
+$black: #000;
+$gray: #F6F6F6;
+$primary: #0C8543;
+$primaryLight: #F3F9F6;
+$borderColor: #E0E0E0;
+
+// z-index
+$level0: 0;
+$level1: 10;
+$level2: 20;
+$level3: 30;
+$level4: 40;
+$level5: 50;
+
+// animation
+$timeSm: 300ms;
+$timeMd: 500ms;
+$timeLg: 800ms;
+$timeXl: 1100ms;
+
+$transition: all $timeSm ease;
+
+// base vars
+$bodyColor: $black;
+$bodyBg: $white;
+
+$fontFamilyBase: $fontDefault;
+$fontSizeBase: 18px;
+$lineHeightBase: (26/18);
+$fontWeightBase: $medium;
+
+$fontSizeBase_sm: 16px;
+$lineHeightBase_sm: (24/16);
+
+$linksColorBase: inherit;
+$headingsFontWeight: $bold;
+
+$radius: 8px;

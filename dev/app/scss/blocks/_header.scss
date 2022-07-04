@@ -1,0 +1,35 @@
+/* header */
+.header {
+	display: block;
+	position: relative;
+	padding: 20px 0;
+	overflow: hidden;
+
+	@include media-breakpoint-down(sm) {
+		padding: 10px 0;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px solid $borderColor;
+		opacity: .98;
+	}
+
+	&__logo {
+		display: inline-flex;
+		max-width: 168px;
+		height: auto;
+
+		@include media-breakpoint-down(sm) {
+			max-width: 150px;
+		}
+
+		img, svg {
+			width: 100%;
+		}
+	}
+}

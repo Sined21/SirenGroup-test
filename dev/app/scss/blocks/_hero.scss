@@ -1,0 +1,58 @@
+/* hero */
+.hero {
+	padding: 50px 0 60px;
+
+	@include media-breakpoint-down(sm) {
+		padding: 25px 0 35px;
+	}
+
+	&__title {
+		margin-bottom: 50px;
+		font-size: 45px;
+		font-weight: $semi;
+		line-height: (60/45);
+		text-shadow: 0px 4px 4px rgba($black, 0.1);
+
+		@include media-breakpoint-down(md) {
+			font-size: 35px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 25px;
+			font-size: 22px;
+			line-height: (26/22);
+		}
+	}
+
+	&__accent {
+		color: $primary;
+		font-weight: $bold;
+		
+		@include media-breakpoint-up(lg) {
+			font-size: 50px;
+			line-height: (60/50);
+		}
+	}
+
+	&__row {
+		--cardGutter: 20px;
+		@include grid-gutter(var(--cardGutter));
+		margin-bottom: calc(var(--cardGutter) * -1);
+
+		@include media-breakpoint-down(sm) {
+			--cardGutter: 8px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		margin-bottom: var(--cardGutter);
+
+		@include media-breakpoint-down(sm) {
+			&:nth-child(1),
+			&:nth-child(3) {
+				order: -1;
+			}
+		}
+	}
+}

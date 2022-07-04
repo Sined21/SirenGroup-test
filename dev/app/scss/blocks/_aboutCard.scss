@@ -1,0 +1,26 @@
+/* aboutCard */
+.aboutCard {
+	width: 100%;
+	background-color: $primary;
+	color: $white;
+	font-size: 21px;
+	line-height: (27/21);
+	border-radius: $radius;
+	
+	&__visual {
+		position: relative;
+		margin: 0;
+		padding-bottom: percentage(126/255);
+		border-radius: $radius;
+		overflow: hidden;
+	}
+
+	&__img {
+		@include position-side();
+		object-fit: cover;
+	}
+
+	&__body {
+		padding: 15px;
+	}
+}

@@ -1,0 +1,6 @@
+/* note */
+.note {
+	@include media-breakpoint-up(md) {
+		text-align: center;
+	}
+}

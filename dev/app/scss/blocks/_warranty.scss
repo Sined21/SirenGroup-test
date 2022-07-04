@@ -1,0 +1,29 @@
+/* warranty */
+.warranty {
+	background-color: $gray;
+
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__icon {
+		display: flex;
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			right: 15px;
+			transform: translateY(-50%);
+		}
+
+		@include media-breakpoint-down(sm) {
+			max-width: 170px;
+			margin: 0 auto 20px;
+		}
+	}
+}

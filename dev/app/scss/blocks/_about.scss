@@ -1,0 +1,21 @@
+/* about */
+.about {
+	text-align: center;
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+	}
+
+	&__row {
+		margin-bottom: -30px;
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: 30px;
+	}
+}
